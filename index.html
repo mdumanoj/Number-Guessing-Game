@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game</title>
+	<link rel='stylesheet' href='style.css'/>
+	<script src='script.js'></script>
+</head>
+<body onload="getNum()">
+<div class="header">
+    <p>Simple Number Guessing Game. !</p>
+</div>
+<form onsubmit="return check()">
+<div class="guess">
+    <p>Guess me:</p>
+    <input type="number" id="guessme" placeholder="Number between(1-100)" max="100" min="1" required>
+    <div>Chances Left: <span id="chance">6</span> </div> 
+</div>
+<br>
+<div class="btn">
+    <input type="submit" value="Is this your Number?">
+</div>
+</form>
+<br><br>
+<div class="result" id="result">
+</div>
+<div class="footer">
+    <span>Developed By Manoj Kumar T S</span>
+</div>
+</body>
+</html>
